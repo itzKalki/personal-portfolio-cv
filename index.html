@@ -24,29 +24,46 @@
   </head>
   <body>
     <div class="container">
-      <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <a
+          class="navbar-brand d-flex align-items-center"
           href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
           <svg class="bi me-2" width="40" height="32">
             <use xlink:href="#bootstrap"></use>
           </svg>
           <span class="fs-4">Kalki Dang</span>
         </a>
-
-        <ul class="nav nav-pills">
-          <li class="nav-item ">
-            <a  href="#" class="nav-link removeline" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item "><a href="#skills" class="nav-link removeline">Skills</a></li>
-          <li class="nav-item "><a  href="#projects" class="nav-link removeline">Projects</a></li>
-          <li class="nav-item "><a href="#contact" class="nav-link removeline">Contact Me</a></li>
-        </ul>
-      </header>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link removeline" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link removeline">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link removeline">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link removeline">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
+  
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -66,7 +83,7 @@
           <p class="lead">Let's work Together</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <button type="button" class="btn btn-warning btn-lg px-4 me-md-2">
-             <a class="removeline" href="#contact">Contact Me</a>
+             <a href="#contact" class="removeline" >Contact Me</a>
             </button>
             <button
               type="button"
@@ -142,8 +159,8 @@
       </div>
     </div>
     <div  id="skills" class="container">
-      <hr />
       <h2>Skills</h2>
+      <hr />
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
